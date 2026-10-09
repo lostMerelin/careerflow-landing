@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CareerFlow — сервис для планирования карьеры, развития навыков и отслеживания целей.">
+  <title>CareerFlow — достигай большего в своей карьере</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#" aria-label="CareerFlow — главная">
+        <span class="logo__mark" aria-hidden="true">C</span><span>CareerFlow</span>
+      </a>
+      <button class="header__menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="#features">Возможности</a>
+        <a class="nav__link" href="#how-it-works">Как это работает</a>
+        <a class="nav__link" href="#reviews">Отзывы</a>
+        <a class="nav__link" href="#faq">FAQ</a>
+      </nav>
+      <div class="header__actions">
+        <a class="header__login" href="#login">Войти</a>
+        <a class="button button--primary button--small" href="#start">Начать бесплатно</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow">Новый подход к карьере</span>
+          <h1>Достигай больше <span>в своей карьере</span></h1>
+          <p class="hero__description">CareerFlow помогает отслеживать цели, развивать навыки и находить новые возможности. Всё, что нужно для карьерного роста — в одном месте.</p>
+          <div class="hero__actions" id="start">
+            <a class="button button--primary" href="#features">Начать бесплатно <span aria-hidden="true">→</span></a>
+            <a class="button button--secondary" href="#how-it-works"><span class="play-icon" aria-hidden="true">▶</span> Посмотреть демо</a>
+          </div>
+          <div class="social-proof">
+            <div class="avatars" aria-hidden="true"><span>А</span><span>М</span><span>И</span><span>Д</span></div>
+            <p>Уже более <strong>5 000 пользователей</strong><br>развивают карьеру с нами</p>
+          </div>
+        </div>
+
+        <div class="dashboard-wrap" aria-label="Предварительный просмотр панели CareerFlow">
+          <div class="dashboard">
+            <aside class="dashboard__sidebar">
+              <a class="logo logo--compact" href="#"><span class="logo__mark">C</span><span>CareerFlow</span></a>
+              <div class="dashboard__menu-item dashboard__menu-item--active">⌂ <span>Главная</span></div>
+              <div class="dashboard__menu-item">◎ <span>Цели</span></div>
+              <div class="dashboard__menu-item">♧ <span>Навыки</span></div>
+              <div class="dashboard__menu-item">▤ <span>Вакансии</span></div>
+              <div class="dashboard__menu-item">▥ <span>Статистика</span></div>
+              <div class="dashboard__menu-item">⚙ <span>Настройки</span></div>
+            </aside>
+            <div class="dashboard__main">
+              <div class="dashboard__top"><span class="dashboard__search">⌕ &nbsp; Поиск...</span><span class="avatar avatar--user">Р</span></div>
+              <h3>Приветствую!</h3>
+              <p class="dashboard__subheading">Продолжай движение к своим целям</p>
+              <div class="dashboard__columns">
+                <div class="dashboard__left-column">
+                  <article class="widget goal-widget">
+                    <p class="widget__label">Ваша цель</p><h4>Frontend Developer</h4>
+                    <div class="progress"><span></span></div><p class="goal-widget__percent">70%</p>
+                  </article>
+                  <article class="widget tasks-widget">
+                    <p class="widget__label">Текущие задачи</p>
+                    <label class="task"><input type="checkbox" checked><span>Изучить TypeScript</span></label>
+                    <label class="task"><input type="checkbox"><span>Сделать 2 пет-проекта</span></label>
+                    <label class="task"><input type="checkbox"><span>Подготовиться к собеседованию</span></label>
+                    <label class="task"><input type="checkbox"><span>Обновить резюме</span></label>
+                    <a href="#features" class="widget__link">Показать все</a>
+                  </article>
+                </div>
+                <div class="dashboard__right-column">
+                  <article class="widget calendar-widget">
+                    <div class="calendar-widget__head"><strong>Октябрь 2026</strong><span>›</span></div>
+                    <div class="calendar-grid"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+                      <span>5</span><span>6</span><span>7</span><span>8</span><span class="calendar-grid__today">9</span><span>10</span><span>11</span>
+                      <span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span>
+                    </div>
+                  </article>
+                  <article class="widget activity-widget"><p class="widget__label">Ваша активность</p><div class="chart" aria-label="График активности за неделю"><i style="height:45%"></i><i style="height:67%"></i><i style="height:38%"></i><i style="height:75%"></i><i style="height:56%"></i><i style="height:88%"></i><i style="height:70%"></i></div><div class="chart-labels"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span></div></article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note"><span class="floating-note__icon">↗</span><div><strong>+35%</strong><small>Рост продуктивности</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="feature-grid">
+          <article class="feature-card feature-card--blue"><div class="feature-card__icon">◎</div><h2>Постановка целей</h2><p>Определяйте карьерные цели и отслеживайте прогресс</p></article>
+          <article class="feature-card feature-card--green"><div class="feature-card__icon">▥</div><h2>Развитие навыков</h2><p>Планируйте обучение и отмечайте достижения</p></article>
+          <article class="feature-card feature-card--orange"><div class="feature-card__icon">▣</div><h2>Актуальные вакансии</h2><p>Подбирайте подходящие вакансии под ваши цели</p></article>
+          <article class="feature-card feature-card--purple"><div class="feature-card__icon">↗</div><h2>Аналитика прогресса</h2><p>Следите за своим развитием с помощью статистики</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits section" id="how-it-works">
+      <div class="container benefits__grid">
+        <div class="benefits__visual">
+          <div class="phone">
+            <div class="phone__notch"></div>
+            <div class="phone__brand"><span class="logo__mark">C</span> CareerFlow <span>☰</span></div>
+            <p class="phone__muted">Мои цели</p><h3>Frontend Developer</h3>
+            <div class="progress"><span></span></div><p class="phone__percent">70%</p>
+            <div class="phone__task phone__task--done">✓ <span>Изучить TypeScript</span></div>
+            <div class="phone__task">○ <span>Сделать 2 пет-проекта</span></div>
+            <div class="phone__task">○ <span>Подготовиться к собеседованию</span></div>
+            <div class="phone__task">○ <span>Обновить резюме</span></div>
+          </div>
+          <div class="growth-card"><strong>+35%</strong><span>Рост продуктивности</span><div class="growth-card__bars"><i></i><i></i><i></i><i></i><i></i></div></div>
+        </div>
+        <div class="benefits__content">
+          <span class="eyebrow">Почему CareerFlow</span>
+          <h2>Все инструменты для карьеры <span>в одном месте</span></h2>
+          <p>Экономьте время, будьте организованными и достигайте своих целей с помощью удобного и понятного сервиса.</p>
+          <ul class="check-list">
+            <li>Удобный и интуитивный интерфейс</li>
+            <li>Работает на любых устройствах</li>
+            <li>Подходит для любой профессии</li>
+            <li>Регулярные обновления и новые возможности</li>
+          </ul>
+          <a class="button button--primary" href="#start">Начать бесплатно <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial section" id="reviews">
+      <div class="container testimonial__inner">
+        <span class="eyebrow">Отзывы пользователей</span>
+        <h2>Маленькие шаги приводят к большим результатам</h2>
+        <blockquote>«Наконец-то все мои карьерные цели, планы обучения и задачи собраны в одном месте. Стало проще видеть прогресс и двигаться дальше».</blockquote>
+        <div class="testimonial__author"><span class="testimonial__avatar">АК</span><span><strong>Александр К.</strong><small>Frontend-разработчик</small></span></div>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="container faq__inner">
+        <span class="eyebrow">FAQ</span><h2>Частые вопросы</h2>
+        <details class="faq__item"><summary>CareerFlow бесплатный?</summary><p>Да, начать пользоваться основными инструментами можно бесплатно.</p></details>
+        <details class="faq__item"><summary>Можно пользоваться с телефона?</summary><p>Да, интерфейс адаптирован для смартфонов, планшетов и компьютеров.</p></details>
+        <details class="faq__item"><summary>Для каких профессий подходит сервис?</summary><p>CareerFlow подходит всем, кто хочет ставить карьерные цели, развивать навыки и отслеживать свой прогресс.</p></details>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div class="container cta__inner"><div><span class="eyebrow eyebrow--light">Твой следующий шаг</span><h2>Готов двигаться к своей цели?</h2><p>Начни выстраивать карьеру осознанно уже сегодня.</p></div><a class="button button--white" href="#start">Начать бесплатно <span aria-hidden="true">→</span></a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner"><a class="logo" href="#"><span class="logo__mark">C</span><span>CareerFlow</span></a><p>© 2026 CareerFlow. Все права защищены.</p><div class="footer__links"><a href="#faq">Помощь</a><a href="#privacy">Конфиденциальность</a></div></div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
